@@ -1,164 +1,207 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شيّلني من دماغك</title>
-    <style>
-        /* إعدادات عامة */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شيّلني من دماغك</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        /* ترويسة الموقع */
-        header {
-            background-color: #3a3a3a;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        header nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f2f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
-        /* أقسام الموقع */
-        section {
-            padding: 50px 0;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-        section p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        section button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #5c6bc0;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        section button:hover {
-            background-color: #3949ab;
-        }
+    header {
+      background: linear-gradient(120deg, #7b6cf6, #5a50d9);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
 
-        /* تذييل الموقع */
-        footer {
-            background-color: #3a3a3a;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 50px;
-        }
-        footer p {
-            font-size: 16px;
-        }
-    </style>
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5a50d9;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #5a50d9;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 10px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #f04e5e;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    .auth {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .auth input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>شيّلني من دماغك</h1>
-            <p>لأنك تستحق بداية جديدة.</p>
-            <nav>
-                <ul>
-                    <li><a href="#home">الصفحة الرئيسية</a></li>
-                    <li><a href="#daily-plan">خطة الانفصال</a></li>
-                    <li><a href="#library">مكتبة النسيان</a></li>
-                    <li><a href="#album">ألبوم الوداع</a></li>
-                    <li><a href="#community">المجتمع</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- الصفحة الرئيسية -->
-    <section id="home">
-        <div class="container">
-            <h2>ابدأ رحلتك الآن</h2>
-            <p>إذا كنت مستعدًا لتجاوز الماضي، نحن هنا لدعمك.</p>
-            <a href="#daily-plan" class="btn">ابدأ الآن</a>
-        </div>
-    </section>
+  <header>
+    <h1>🧠 شيّلني من دماغك</h1>
+    <p>بداية جديدة تستاهلها</p>
+  </header>
 
-    <!-- خطة الانفصال الذكي -->
-    <section id="daily-plan">
-        <div class="container">
-            <h2>خطة الانفصال الذكي</h2>
-            <p>ابدأ رحلتك معنا بخطة يومية تساعدك على تجاوز التعلق.</p>
-            <button>ابدأ التمرين اليومي</button>
-        </div>
-    </section>
+  <nav>
+    <a href="#plan">الخطة</a>
+    <a href="#panic">زر الطوارئ</a>
+    <a href="#library">مكتبة</a>
+    <a href="#album">ألبوم</a>
+    <a href="#community">مجتمع</a>
+  </nav>
 
-    <!-- مكتبة النسيان -->
-    <section id="library">
-        <div class="container">
-            <h2>مكتبة النسيان</h2>
-            <p>دعم ومحتوى مرئي يساعدك في المضي قدمًا.</p>
-            <button>استكشف المحتوى</button>
-        </div>
-    </section>
+  <div class="auth">
+    <h2>🔐 تسجيل الدخول / إنشاء حساب</h2>
+    <input type="text" id="username" placeholder="اسم المستخدم">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button onclick="login()">دخول</button>
+  </div>
 
-    <!-- ألبوم الوداع -->
-    <section id="album">
-        <div class="container">
-            <h2>ألبوم الوداع</h2>
-            <p>أرفق صورك وذكرياتك هنا لأرشفتها أو حذفها.</p>
-            <button>أضف ذكرياتك</button>
-        </div>
-    </section>
+  <section id="plan">
+    <h2>📅 خطة الانفصال الذكي</h2>
+    <div class="card">اليوم 1: اكتب رسالة وداع لن ترسلها أبدًا.</div>
+    <div class="card">اليوم 2: احذف كل الصور من جهازك.</div>
+    <div class="card">اليوم 3: جرب نشاط جديد لأول مرة.</div>
+    <div class="card">اليوم 4: رتب غرفتك، خلّيك مشغول.</div>
+  </section>
 
-    <!-- المجتمع -->
-    <section id="community">
-        <div class="container">
-            <h2>المجتمع</h2>
-            <p>انضم إلى مجتمعنا للدعم والمشاركة.</p>
-            <button>انضم للمجتمع</button>
-        </div>
-    </section>
+  <section id="panic">
+    <h2>🚨 زر "لما أضعف"</h2>
+    <p>تحس إنك بتضعف؟ اضغط الزر ده وافتكر ليه بدأت.</p>
+    <button onclick="alert('إنت أقوى من كده! اللي راح ما يستاهلكش.')">شيّلني من دماغك 💔</button>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 شيّلني من دماغك. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
+  <section id="library">
+    <h2>📚 مكتبة النسيان</h2>
+    <div class="card">🎧 بودكاست: كيف تتجاوز شخص ما؟</div>
+    <div class="card">📖 مقال: التعلّق مش حب، افهم الفرق.</div>
+    <div class="card">🎬 فيديو: التغيير يبدأ من قرار.</div>
+  </section>
+
+  <section id="album">
+    <h2>📁 ألبوم الوداع</h2>
+    <p>اكتب هنا الذكريات أو الرسائل اللي تودّعها. لا أحد يراها غيرك.</p>
+    <textarea id="memoryBox" rows="6" placeholder="اكتب هنا..." oninput="saveMemory()"></textarea>
+  </section>
+
+  <section id="community">
+    <h2>🌍 مجتمع "ما أرجعش"</h2>
+    <div class="card">"كنت تعبان جدًا في البداية.. دلوقتي بقيت بضحك وأنا بفكر في غبائي." – مجهول</div>
+    <div class="card">"كل يوم بعد البلوك، كنت بحس إني باسترجع نفسي." – زهرة</div>
+  </section>
+
+  <footer>
+    &copy; 2025 موقع شيّلني من دماغك – تصميم بحُب ♥
+  </footer>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user && pass) {
+        localStorage.setItem('user', user);
+        alert('تم تسجيل الدخول كـ ' + user);
+      } else {
+        alert('من فضلك ادخل البيانات كاملة.');
+      }
+    }
+
+    function saveMemory() {
+      const content = document.getElementById('memoryBox').value;
+      localStorage.setItem('memories', content);
+    }
+    // تحميل البيانات المخزنة مؤقتًا
+    window.onload = () => {
+      const saved = localStorage.getItem('memories');
+      if (saved) document.getElementById('memoryBox').value = saved;
+    }
+  </script>
+
 </body>
+
 </html>
 
