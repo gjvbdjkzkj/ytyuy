@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -6,84 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شيّلني من دماغك</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+        /* إعدادات عامة */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* ترويسة الموقع */
         header {
-            background-color: #6a4c93;
-            color: white;
+            background-color: #3a3a3a;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
         }
-        .section {
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
-        h2 {
-            color: #6a4c93;
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
-        .button {
-            background-color: #6a4c93;
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* أقسام الموقع */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        section button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #5c6bc0;
             color: white;
-            padding: 10px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            text-align: center;
-            margin-top: 10px;
+            border-radius: 5px;
         }
-        .button:hover {
-            background-color: #5a3d7e;
+        section button:hover {
+            background-color: #3949ab;
+        }
+
+        /* تذييل الموقع */
+        footer {
+            background-color: #3a3a3a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>شيّلني من دماغك</h1>
-        <p>لأنك تستحق بداية جديدة!</p>
+        <div class="container">
+            <h1>شيّلني من دماغك</h1>
+            <p>لأنك تستحق بداية جديدة.</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">الصفحة الرئيسية</a></li>
+                    <li><a href="#daily-plan">خطة الانفصال</a></li>
+                    <li><a href="#library">مكتبة النسيان</a></li>
+                    <li><a href="#album">ألبوم الوداع</a></li>
+                    <li><a href="#community">المجتمع</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="section">
-        <h2>خطة الانفصال الذكي</h2>
-        <p>ابدأ الآن مع خطة يومية مدروسة لتجاوز التعلق أو العادة التي ترغب في التخلص منها. قم بتحديد اليوم وابدأ الأنشطة المدروسة الخاصة بنا.</p>
-        <button class="button">ابدأ الخطة</button>
-    </div>
+    <!-- الصفحة الرئيسية -->
+    <section id="home">
+        <div class="container">
+            <h2>ابدأ رحلتك الآن</h2>
+            <p>إذا كنت مستعدًا لتجاوز الماضي، نحن هنا لدعمك.</p>
+            <a href="#daily-plan" class="btn">ابدأ الآن</a>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>زر "لما أضعف"</h2>
-        <p>احتجت دعم لحظة الضعف؟ اضغط هنا لتلقي رسالة تحفيزية، فيديو دعم، أو نص للإلهام.</p>
-        <button class="button">زر الطوارئ</button>
-    </div>
+    <!-- خطة الانفصال الذكي -->
+    <section id="daily-plan">
+        <div class="container">
+            <h2>خطة الانفصال الذكي</h2>
+            <p>ابدأ رحلتك معنا بخطة يومية تساعدك على تجاوز التعلق.</p>
+            <button>ابدأ التمرين اليومي</button>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>مكتبة النسيان</h2>
-        <p>تصفح المقالات والبودكاست والكتب التي ستساعدك على فهم عملية النسيان وكيفية التعافي.</p>
-        <button class="button">استعرض المكتبة</button>
-    </div>
+    <!-- مكتبة النسيان -->
+    <section id="library">
+        <div class="container">
+            <h2>مكتبة النسيان</h2>
+            <p>دعم ومحتوى مرئي يساعدك في المضي قدمًا.</p>
+            <button>استكشف المحتوى</button>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>تحدي "أفهم نفسي"</h2>
-        <p>استفد من استبيانات واختبارات تساعدك على فهم نمطك العاطفي وتحديد سبب التعلق.</p>
-        <button class="button">ابدأ التحدي</button>
-    </div>
+    <!-- ألبوم الوداع -->
+    <section id="album">
+        <div class="container">
+            <h2>ألبوم الوداع</h2>
+            <p>أرفق صورك وذكرياتك هنا لأرشفتها أو حذفها.</p>
+            <button>أضف ذكرياتك</button>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>ألبوم الوداع</h2>
-        <p>خزن الذكريات واللحظات التي ترغب في توديعها وابدأ في التخلص منها خطوة بخطوة.</p>
-        <button class="button">أنشئ الألبوم</button>
-    </div>
+    <!-- المجتمع -->
+    <section id="community">
+        <div class="container">
+            <h2>المجتمع</h2>
+            <p>انضم إلى مجتمعنا للدعم والمشاركة.</p>
+            <button>انضم للمجتمع</button>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>مجتمع "ما أرجعش"</h2>
-        <p>انضم إلى المجتمع لمشاركة قصتك واستقبال الدعم من آخرين مروا بتجربة مشابهة.</p>
-        <button class="button">انضم إلى المجتمع</button>
-    </div>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 شيّلني من دماغك. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
